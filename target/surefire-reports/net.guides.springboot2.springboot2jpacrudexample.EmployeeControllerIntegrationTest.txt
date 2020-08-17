@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 104.441 sec <<< FAILURE! - in net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest
+testDeleteEmployee(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0.451 sec  <<< ERROR!
+org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class net.guides.springboot2.springboot2jpacrudexample.model.Employee] and content type [text/html;charset=utf-8]
+	at net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest.testDeleteEmployee(EmployeeControllerIntegrationTest.java:89)
+
+testGetEmployeeById(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 2.286 sec  <<< ERROR!
+org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class net.guides.springboot2.springboot2jpacrudexample.model.Employee] and content type [text/html;charset=utf-8]
+	at net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest.testGetEmployeeById(EmployeeControllerIntegrationTest.java:56)
+
+testUpdateEmployee(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 8.115 sec  <<< ERROR!
+org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class net.guides.springboot2.springboot2jpacrudexample.model.Employee] and content type [text/html;charset=utf-8]
+	at net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest.testUpdateEmployee(EmployeeControllerIntegrationTest.java:76)
+
+testCreateEmployee(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0.346 sec  <<< ERROR!
+org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class net.guides.springboot2.springboot2jpacrudexample.model.Employee] and content type [text/html;charset=utf-8]
+	at net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest.testCreateEmployee(EmployeeControllerIntegrationTest.java:68)
+
