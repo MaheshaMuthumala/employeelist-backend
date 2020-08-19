@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest
 -------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 104.441 sec <<< FAILURE! - in net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest
 testDeleteEmployee(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0.451 sec  <<< ERROR!
 org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class net.guides.springboot2.springboot2jpacrudexample.model.Employee] and content type [text/html;charset=utf-8]
@@ -17,4 +18,42 @@ org.springframework.web.client.RestClientException: Could not extract response: 
 testCreateEmployee(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0.346 sec  <<< ERROR!
 org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class net.guides.springboot2.springboot2jpacrudexample.model.Employee] and content type [text/html;charset=utf-8]
 	at net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest.testCreateEmployee(EmployeeControllerIntegrationTest.java:68)
+=======
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 284.443 sec <<< FAILURE! - in net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest
+testDeleteEmployee(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0.012 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+
+testGetEmployeeById(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+
+testUpdateEmployee(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+
+testCreateEmployee(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+
+testGetAllEmployees(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+
+contextLoads(net.guides.springboot2.springboot2jpacrudexample.EmployeeControllerIntegrationTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+>>>>>>> Stashed changes
 
